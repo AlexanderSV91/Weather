@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <!--menu-->
+    <string name="menu_title_weather">Weather</string>
+    <string name="menu_title_maps">Maps</string>
+    <string name="menu_title_search_city">Search City</string>
+    <!--weather fragment content description-->
+    <string name="weather_fragment_icon_place_weather_city">icon place weather city</string>
+    <string name="weather_fragment_my_location">my location</string>
+    <string name="weather_fragment_icon_weather">icon weather</string>
+    <string name="weather_fragment_icon_temperature">icon temperature</string>
+    <string name="weather_fragment_icon_humidity">icon humidity</string>
+    <string name="weather_fragment_icon_wind">icon wind</string>
+    <string name="weather_fragment_icon_wind_direction">icon wind direction</string>
+    <!--cart item weather time-->
+    <string name="cart_item_weather_time_icon_weather">icon weather</string>
+    <!--cart item weather day-->
+    <string name="card_item_weather_day_icon_weather">icon weather</string>
+
+</resources>

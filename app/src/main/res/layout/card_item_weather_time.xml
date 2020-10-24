@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryVariant"
+        android:orientation="vertical"
+        android:padding="@dimen/card_item_weather_time_padding_10"
+        android:paddingStart="@dimen/card_item_weather_time_padding_start_20"
+        android:paddingEnd="@dimen/card_item_weather_time_padding_end_20">
+
+        <TextView
+            android:id="@+id/tv_time_item_weather_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/card_item_weather_time_text_size_16"
+            tools:text="17 00" />
+
+        <ImageView
+            android:id="@+id/iv_icon_item_weather_time"
+            android:layout_width="@dimen/card_item_weather_time_width_50"
+            android:layout_height="@dimen/card_item_weather_time_height_50"
+            android:contentDescription="@string/cart_item_weather_time_icon_weather"
+            tools:src="@drawable/ic_white_day_cloudy" />
+
+        <TextView
+            android:id="@+id/tv_temperature_item_weather_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/card_item_weather_time_text_size_16"
+            tools:text="27&#176;" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

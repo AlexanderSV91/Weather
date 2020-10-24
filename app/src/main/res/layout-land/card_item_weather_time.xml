@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/land_card_item_weather_time_margin_end_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryVariant"
+        android:orientation="horizontal"
+        android:padding="@dimen/land_card_item_weather_time_padding_5"
+        android:paddingStart="@dimen/land_card_item_weather_time_padding_start_10"
+        android:paddingEnd="@dimen/land_card_item_weather_time_padding_end_15">
+
+        <ImageView
+            android:id="@+id/iv_icon_item_weather_time"
+            android:layout_width="@dimen/land_card_item_weather_time_width_45"
+            android:layout_height="@dimen/land_card_item_weather_time_height_45"
+            android:contentDescription="@string/cart_item_weather_time_icon_weather"
+            tools:src="@drawable/ic_white_day_cloudy" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/land_card_item_weather_time_margin_start_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_time_item_weather_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/land_card_item_weather_time_text_size_16"
+                tools:text="17:00" />
+
+            <TextView
+                android:id="@+id/tv_temperature_item_weather_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/land_card_item_weather_time_text_size_16"
+                tools:text="27&#176;" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

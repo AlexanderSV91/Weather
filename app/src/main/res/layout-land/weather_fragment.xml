@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.main_screen.WeatherFragment">
+
+    <ImageView
+        android:id="@+id/iv_place_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_25"
+        android:layout_height="@dimen/land_weather_fragment_height_25"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_15"
+        android:layout_marginTop="@dimen/land_weather_fragment_margin_top_15"
+        android:contentDescription="@string/weather_fragment_icon_place_weather_city"
+        android:src="@drawable/ic_place"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_place"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_location_weather_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/land_weather_fragment_padding_bottom_5"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="@dimen/land_weather_fragment_text_size_28"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_place_weather_fragment"
+        app:layout_constraintStart_toEndOf="@id/iv_place_weather_fragment"
+        app:layout_constraintTop_toTopOf="@+id/iv_place_weather_fragment"
+        tools:text="Kiev" />
+
+    <ImageView
+        android:id="@+id/iv_location_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_25"
+        android:layout_height="@dimen/land_weather_fragment_height_25"
+        android:layout_marginEnd="@dimen/land_weather_fragment_margin_end_15"
+        android:contentDescription="@string/weather_fragment_my_location"
+        android:src="@drawable/ic_my_location"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_place_weather_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_place_weather_fragment"
+        tools:src="@drawable/ic_my_location"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_show_current_icon_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_200"
+        android:layout_height="@dimen/land_weather_fragment_height_200"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_15"
+        android:layout_marginTop="@dimen/land_weather_fragment_margin_top_5"
+        android:contentDescription="@string/weather_fragment_icon_weather"
+        app:layout_constraintBottom_toTopOf="@+id/rv_show_weather_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_place_weather_fragment"
+        tools:src="@drawable/ic_white_day_cloudy" />
+
+
+    <TextView
+        android:id="@+id/tv_day_weather_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:layout_marginTop="@dimen/land_weather_fragment_margin_top_15"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="@dimen/land_weather_fragment_text_size_24"
+        app:layout_constraintStart_toEndOf="@id/iv_show_current_icon_weather_fragment"
+        app:layout_constraintTop_toTopOf="@id/iv_show_current_icon_weather_fragment"
+        tools:text="ПТ, 20 Июля" />
+
+    <ImageView
+        android:id="@+id/iv_show_current_temperature_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_25"
+        android:layout_height="@dimen/land_weather_fragment_height_25"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:contentDescription="@string/weather_fragment_icon_temperature"
+        android:src="@drawable/ic_temp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_show_current_humidity_weather_fragment"
+        app:layout_constraintStart_toEndOf="@id/iv_show_current_icon_weather_fragment"
+        app:layout_constraintTop_toBottomOf="@id/tv_day_weather_fragment"
+        tools:src="@drawable/ic_temp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_show_current_temperature_weather_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="@dimen/land_weather_fragment_text_size_24"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_show_current_temperature_weather_fragment"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_current_temperature_weather_fragment"
+        app:layout_constraintTop_toTopOf="@+id/iv_show_current_temperature_weather_fragment"
+        tools:text="27&#176;/19&#176;" />
+
+    <ImageView
+        android:id="@+id/iv_show_current_humidity_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_25"
+        android:layout_height="@dimen/land_weather_fragment_height_25"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:contentDescription="@string/weather_fragment_icon_humidity"
+        android:src="@drawable/ic_humidity"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_show_current_wind_weather_fragment"
+        app:layout_constraintStart_toEndOf="@id/iv_show_current_icon_weather_fragment"
+        app:layout_constraintTop_toBottomOf="@id/iv_show_current_temperature_weather_fragment"
+        tools:src="@drawable/ic_humidity"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_show_current_humidity_weather_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="@dimen/land_weather_fragment_text_size_24"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_show_current_humidity_weather_fragment"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_current_humidity_weather_fragment"
+        app:layout_constraintTop_toTopOf="@+id/iv_show_current_humidity_weather_fragment"
+        tools:text="33%" />
+
+    <ImageView
+        android:id="@+id/iv_show_current_wind_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_25"
+        android:layout_height="@dimen/land_weather_fragment_height_25"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:contentDescription="@string/weather_fragment_icon_wind"
+        android:src="@drawable/ic_wind"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_show_current_icon_weather_fragment"
+        app:layout_constraintStart_toEndOf="@id/iv_show_current_icon_weather_fragment"
+        app:layout_constraintTop_toBottomOf="@id/iv_show_current_humidity_weather_fragment"
+        tools:src="@drawable/ic_wind"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_show_current_wind_weather_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_10"
+        android:textColor="@color/colorWhiteText"
+        android:textSize="@dimen/land_weather_fragment_text_size_24"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_show_current_wind_weather_fragment"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_current_wind_weather_fragment"
+        app:layout_constraintTop_toTopOf="@+id/iv_show_current_wind_weather_fragment"
+        tools:text="5м/сек" />
+
+    <ImageView
+        android:id="@+id/iv_show_current_wind_direction_weather_fragment"
+        android:layout_width="@dimen/land_weather_fragment_width_40"
+        android:layout_height="@dimen/land_weather_fragment_height_40"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_5"
+        android:contentDescription="@string/weather_fragment_icon_wind_direction"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_show_current_wind_weather_fragment"
+        app:layout_constraintStart_toEndOf="@id/tv_show_current_wind_weather_fragment"
+        app:layout_constraintTop_toTopOf="@id/tv_show_current_wind_weather_fragment"
+        tools:src="@drawable/icon_wind_ne" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_show_weather_date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_50"
+        android:layout_marginTop="@dimen/land_weather_fragment_rv_show_weather_day_margin_top"
+        android:layout_marginEnd="@dimen/land_weather_fragment_rv_show_weather_day_margin_end"
+        android:background="@color/colorPrimary"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_current_wind_direction_weather_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/iv_location_weather_fragment"
+        tools:listitem="@layout/card_item_weather_date" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_show_weather_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_weather_fragment_margin_start_5"
+        android:layout_marginEnd="@dimen/land_weather_fragment_rv_show_weather_time_margin_end"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rv_show_weather_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_show_current_icon_weather_fragment"
+        tools:listitem="@layout/card_item_weather_time" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

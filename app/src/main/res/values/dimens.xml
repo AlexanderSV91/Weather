@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--land weather fragment-->
+    <dimen name="land_weather_fragment_width_25">25dp</dimen>
+    <dimen name="land_weather_fragment_width_40">40dp</dimen>
+    <dimen name="land_weather_fragment_width_200">200dp</dimen>
+    <dimen name="land_weather_fragment_height_25">25dp</dimen>
+    <dimen name="land_weather_fragment_height_40">40dp</dimen>
+    <dimen name="land_weather_fragment_height_200">200dp</dimen>
+    <dimen name="land_weather_fragment_text_size_24">24sp</dimen>
+    <dimen name="land_weather_fragment_text_size_28">28sp</dimen>
+    <dimen name="land_weather_fragment_margin_top_5">5dp</dimen>
+    <dimen name="land_weather_fragment_rv_show_weather_day_margin_top">10dp</dimen>
+    <dimen name="land_weather_fragment_margin_top_15">15dp</dimen>
+    <dimen name="land_weather_fragment_rv_show_weather_time_margin_end">5dp</dimen>
+    <dimen name="land_weather_fragment_rv_show_weather_day_margin_end">10dp</dimen>
+    <dimen name="land_weather_fragment_margin_end_15">15dp</dimen>
+    <dimen name="land_weather_fragment_iv_wind_direction_margin_start">5dp</dimen>
+    <dimen name="land_weather_fragment_margin_start_5">5dp</dimen>
+    <dimen name="land_weather_fragment_margin_start_10">10dp</dimen>
+    <dimen name="land_weather_fragment_margin_start_15">15dp</dimen>
+    <dimen name="land_weather_fragment_margin_start_50">50dp</dimen>
+    <dimen name="land_weather_fragment_padding_bottom_5">5dp</dimen>
+    <!--weather fragment-->
+    <dimen name="weather_fragment_width_30">30dp</dimen>
+    <dimen name="weather_fragment_width_40">40dp</dimen>
+    <dimen name="weather_fragment_width_200">200dp</dimen>
+    <dimen name="weather_fragment_height_30">30dp</dimen>
+    <dimen name="weather_fragment_height_40">40dp</dimen>
+    <dimen name="weather_fragment_height_200">200dp</dimen>
+    <dimen name="weather_fragment_text_size_18">18sp</dimen>
+    <dimen name="weather_fragment_text_size_24">24sp</dimen>
+    <dimen name="weather_fragment_text_size_38">38sp</dimen>
+    <dimen name="weather_fragment_margin_top_15">15dp</dimen>
+    <dimen name="weather_fragment_margin_top_25">25dp</dimen>
+    <dimen name="weather_fragment_margin_end_15">15dp</dimen>
+    <dimen name="weather_fragment_margin_start_5">5dp</dimen>
+    <dimen name="weather_fragment_margin_start_10">10dp</dimen>
+    <dimen name="weather_fragment_margin_start_15">15dp</dimen>
+    <dimen name="weather_fragment_padding_bottom_5">5dp</dimen>
+    <!--card item weather time-->
+    <dimen name="card_item_weather_time_width_50">50dp</dimen>
+    <dimen name="card_item_weather_time_height_50">50dp</dimen>
+    <dimen name="card_item_weather_time_text_size_16">16sp</dimen>
+    <dimen name="card_item_weather_time_padding_10">10dp</dimen>
+    <dimen name="card_item_weather_time_padding_start_20">20dp</dimen>
+    <dimen name="card_item_weather_time_padding_end_20">20dp</dimen>
+    <!--land card item weather time-->
+    <dimen name="land_card_item_weather_time_width_45">45dp</dimen>
+    <dimen name="land_card_item_weather_time_height_45">45dp</dimen>
+    <dimen name="land_card_item_weather_time_text_size_16">16sp</dimen>
+    <dimen name="land_card_item_weather_time_margin_end_5">5dp</dimen>
+    <dimen name="land_card_item_weather_time_margin_start_5">5dp</dimen>
+    <dimen name="land_card_item_weather_time_padding_5">5dp</dimen>
+    <dimen name="land_card_item_weather_time_padding_start_10">10dp</dimen>
+    <dimen name="land_card_item_weather_time_padding_end_15">15dp</dimen>
+    <!--card item weather day-->
+    <dimen name="card_item_weather_date_width_40">40dp</dimen>
+    <dimen name="card_item_weather_date_height_44">44dp</dimen>
+    <dimen name="card_item_weather_date_margin_end_10">10dp</dimen>
+    <dimen name="card_item_weather_date_margin_start_10">10dp</dimen>
+    <!--land card item weather day-->
+    <dimen name="land_card_item_weather_day_width_50">50dp</dimen>
+    <dimen name="land_card_item_weather_day_height_50">50dp</dimen>
+    <dimen name="card_item_weather_date_text_size_32">32sp</dimen>
+    <dimen name="land_card_item_weather_day_text_size_42">42sp</dimen>
+    <dimen name="land_card_item_weather_day_margin_end_10">10dp</dimen>
+    <dimen name="land_card_item_weather_day_margin_start_10">10dp</dimen>
+
+</resources>
